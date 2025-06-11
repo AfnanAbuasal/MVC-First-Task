@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.Name</title>
+</head>
+<body>
+    @{
+        if(Model.ID == 1)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="~/Fenty_Beauty_Gloss_Bomb.jpg" class="card-img-top" alt="@Model.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    <p class="card-text">@Model.Description</p>
+                    <a href="/Products/Index" type="button" class="btn btn-primary btn-sm">Back to Products</a>
+                </div>
+            </div>
+        }else if(Model.ID == 2)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="~/Maybelline_Lash_Sensational_Mascara.jpg" class="card-img-top" alt="@Model.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    <p class="card-text">@Model.Description</p>
+                    <a href="/Products/Index" type="button" class="btn btn-primary btn-sm">Back to Products</a>
+                </div>
+            </div>
+        }else
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="~/NARS_Radiant_Creamy_Consealer.jpg" class="card-img-top" alt="@Model.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    <p class="card-text">@Model.Description</p>
+                    <a href="/Products/Index" type="button" class="btn btn-primary btn-sm">Back to Products</a>
+                </div>
+            </div>
+        }
+    }
+        
+</body>
+</html>
